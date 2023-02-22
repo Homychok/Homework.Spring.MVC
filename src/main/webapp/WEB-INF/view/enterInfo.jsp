@@ -13,15 +13,15 @@
 <body>
 <h1>Введите название страны и ее столицу </h1>
 <br>
-<br>
 <%--<h3>Страна</h3>--%>
 <form action="showInfo" method="get">
     <h3>Страна</h3>
-    <input type="text" name="country">
+    <input type="text" name="country" >
     <h3>Столица </h3>
-    <input type="text" name="capital">
+    <input type="text" name="capital" >
     <br>
-    <input type="submit">
+    <input type="submit" >
+
 <%--    <input type="submit">--%>
 </form>
 <%--<form action="showInfoCapital" method="get">--%>
