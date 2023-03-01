@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/homework.spring.mvc")
+@RequestMapping("/mvc")
 public class SpringMVCController {
     @RequestMapping("/1")
     public String getCountry() {
