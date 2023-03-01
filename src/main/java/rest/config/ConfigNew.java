@@ -9,7 +9,6 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import javax.sql.CommonDataSource;
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 import java.util.Properties;
@@ -19,7 +18,7 @@ import java.util.Properties;
 @ComponentScan(basePackages = "rest")
 @EnableWebMvc
 @EnableTransactionManagement
-public class CofigNew {
+public class ConfigNew {
     @Bean
     public DataSource getDataSource () {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();

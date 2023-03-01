@@ -3,17 +3,18 @@ package rest.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+import org.springframework.stereotype.Repository;
 import rest.entity.Employee;
 
 import java.util.List;
-
+@Repository
 public class EmployeeDAOImpl implements EmployeeDAO{
     private SessionFactory sessionFactory;
     public EmployeeDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
     @Override
-    public List<Employee> getEmployees() {
+    public List<Employee> getEmployee() {
         Session session = sessionFactory.getCurrentSession();
         return session.createQuery("From Employee").list();
     }

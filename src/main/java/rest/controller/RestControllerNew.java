@@ -16,8 +16,8 @@ public class RestControllerNew {
     }
 
     @GetMapping("/employee")
-    public List<Employee> getEmployees() {
-        return employeeService.getEmployees();
+    public List<Employee> getEmployee() {
+        return employeeService.getEmployee();
 
     }
 
